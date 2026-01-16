@@ -1,0 +1,42 @@
+body {
+  margin: 40px;
+  background-image: url(https://media.istockphoto.com/id/809971888/photo/night-sky-landscape.jpg?s=612x612&w=0&k=20&c=ku3RWu4DQ8ErN-KbT1Act72LMocTwSAAm3UDkLiako0=);
+  font-family: "Times New Roman", serif;
+  background-size: cover;
+  background-position: center;
+}
+
+.tittle {
+  background-color: #480404;
+  color: white;
+
+  padding: 10px;
+  height: 50px;
+  border: solid green 2px;
+}
+.para1 {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 18px;
+  background-color: #796206;
+  border: solid red 5px;
+  color: white;
+}
+.para2 {
+  margin-top: 20px;
+  font-size: 18px;
+  background-color: #dede0c;
+  padding: 10px;
+  border: dotted red 2px;
+  border-radius: 20px;
+  color: rgb(237, 17, 17);
+}
+.para3 {
+  margin-top: 20px;
+  font-size: 18px;
+  background-color: #dcce0c;
+  padding: 10px;
+
+  border-radius: 20px;
+  color: rgb(13, 62, 208);
+}
