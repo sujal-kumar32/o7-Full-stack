@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Hover Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="gallery-box">
+      <div class="top-image">
+        <img
+          id="mainImage"
+          src="/MouseHover/images/img.1.jpeg"
+          alt="Main gallery image"
+        />
+      </div>
+
+      <div class="bottom-images">
+        <img
+          src="/MouseHover/images/img.2.jpeg"
+          alt="Gallery thumbnail 1"
+          onmouseover="showImage(this)"
+          onmouseout="resetImage()"
+        />
+        <img
+          src="/MouseHover/images/img.3.jpeg"
+          alt="Gallery thumbnail 2"
+          onmouseover="showImage(this)"
+          onmouseout="resetImage()"
+        />
+        <img
+          src="/MouseHover/images/img.4.jpeg"
+          alt="Gallery thumbnail 3"
+          onmouseover="showImage(this)"
+          onmouseout="resetImage()"
+        />
+        <img
+          src="/MouseHover/images/img.5.jpeg"
+          alt="Gallery thumbnail 4"
+          onmouseover="showImage(this)"
+          onmouseout="resetImage()"
+        />
+      </div>
+    </div>
+
+    <script src="/MouseHover/script.js"></script>
+  </body>
+</html>
