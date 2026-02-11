@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess The Movie</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Guess The Movie</h1>
+
+    <ul class="hints">
+      <li>Its a horror movie</li>
+      <li>Its bollywood movie</li>
+      <li>It released in 2008</li>
+      <li>Starring Adah Sharma</li>
+    </ul>
+
+    <div class="bomb-row">
+      <img src="image1.png" class="bomb" alt="bomb" />
+      <img src="image1.png" class="bomb" alt="bomb" />
+      <img src="image1.png" class="bomb" alt="bomb" />
+      <img src="image1.png" class="bomb" alt="bomb" />
+    </div>
+
+    <div class="input-row">
+      <input type="text" maxlength="1" placeholder="Letter 1" />
+      <input type="text" maxlength="1" placeholder="Letter 2" />
+      <input type="text" maxlength="1" placeholder="Letter 3" />
+      <input type="text" maxlength="1" placeholder="Letter 4" />
+    </div>
+
+    <button onclick="retry()">Retry</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>

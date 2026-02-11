@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding-top: 30px;
+}
+
+/* Title */
+h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+/* Hints */
+.hints {
+  list-style: disc;
+  width: 260px;
+  margin: 0 auto 40px;
+  text-align: left;
+  color: #555;
+}
+
+/* Bomb row */
+.bomb-row {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 25px;
+}
+
+.bomb {
+  width: 85px;
+}
+
+/* Input row */
+.input-row {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 35px;
+}
+
+.input-row input {
+  width: 90px;
+  height: 55px;
+  font-size: 22px;
+  text-align: center;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+.input-row input:focus {
+  border: 2px solid #6aa9ff;
+}
+
+/* Retry button */
+.retry-btn {
+  background: #1a73e8;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
