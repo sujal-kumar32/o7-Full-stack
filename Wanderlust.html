@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wanderlust Travels</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .main-navbar {
+        height: 70px;
+        background: #212529;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 60px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      .brand-name {
+        color: #fff;
+        font-size: 22px;
+        font-weight: bold;
+      }
+
+      .nav-menu {
+        list-style: none;
+        display: flex;
+        gap: 30px;
+      }
+
+      .nav-menu a {
+        text-decoration: none;
+        color: #aaa;
+        font-size: 15px;
+        font-weight: 500;
+      }
+
+      .nav-menu a:hover,
+      .nav-menu a.active {
+        color: #fff;
+      }
+
+      .hero-section {
+        height: 90vh;
+        background: url("https://media.istockphoto.com/id/1385658360/photo/beautiful-hills-and-mountains-colored-of-shades-of-blue-extending-up-to-the-horizon-at.jpg?s=612x612&w=0&k=20&c=NwQHbf9n8R0sZ-pItUdu6kskH6R-17DtOY8ZwACNSD0=")
+          center / cover no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .hero-text h1 {
+        color: #fff;
+        font-size: 48px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      .hero-text p {
+        color: #eee;
+        font-size: 18px;
+        margin-bottom: 25px;
+      }
+
+      .hero-text button {
+        background: #0d6efd;
+        border: none;
+        color: #fff;
+        padding: 12px 30px;
+        font-size: 16px;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+
+      .hero-text button:hover {
+        background: #0b5ed7;
+      }
+
+      .review-card {
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        border: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="main-navbar">
+      <div class="brand-name">Wanderlust</div>
+      <ul class="nav-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Our Story</a></li>
+        <li><a href="#">Our Members</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#" class="active">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero-section">
+      <div class="hero-text">
+        <h1>Explore The World With Us</h1>
+        <p>Your journey begins here</p>
+        <button>Discover Now</button>
+      </div>
+    </section>
+
+    <section class="py-5 bg-light" id="destinations">
+      <div class="container">
+        <h2 class="text-center mb-5">Top Destinations</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="https://media.istockphoto.com/id/1385658360/photo/beautiful-hills-and-mountains-colored-of-shades-of-blue-extending-up-to-the-horizon-at.jpg?s=612x612&w=0&k=20&c=NwQHbf9n8R0sZ-pItUdu6kskH6R-17DtOY8ZwACNSD0="
+                class="card-img-top"
+                alt="Paris"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Paris, France</h5>
+                <p class="card-text">
+                  The city of lights, romance, and culture.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="https://media.istockphoto.com/id/1385658360/photo/beautiful-hills-and-mountains-colored-of-shades-of-blue-extending-up-to-the-horizon-at.jpg?s=612x612&w=0&k=20&c=NwQHbf9n8R0sZ-pItUdu6kskH6R-17DtOY8ZwACNSD0="
+                class="card-img-top"
+                alt="Bali"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Bali, Indonesia</h5>
+                <p class="card-text">
+                  A tropical paradise for your soul and senses.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="https://media.istockphoto.com/id/1385658360/photo/beautiful-hills-and-mountains-colored-of-shades-of-blue-extending-up-to-the-horizon-at.jpg?s=612x612&w=0&k=20&c=NwQHbf9n8R0sZ-pItUdu6kskH6R-17DtOY8ZwACNSD0="
+                class="card-img-top"
+                alt="New York"
+              />
+              <div class="card-body">
+                <h5 class="card-title">New York, USA</h5>
+                <p class="card-text">The city that never sleeps.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">About Us</h2>
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p>
+              At Wanderlust Travels, we believe every journey should be
+              unforgettable.
+            </p>
+            <p>
+              From luxurious beach resorts to offbeat mountain trails, we have
+              it all covered.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="https://media.istockphoto.com/id/1385658360/photo/beautiful-hills-and-mountains-colored-of-shades-of-blue-extending-up-to-the-horizon-at.jpg?s=612x612&w=0&k=20&c=NwQHbf9n8R0sZ-pItUdu6kskH6R-17DtOY8ZwACNSD0="
+              class="img-fluid rounded"
+              alt="About Wanderlust"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">Travel Packages</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 text-center">
+              <div class="card-body">
+                <h5 class="card-title">Budget Explorer</h5>
+                <p class="card-text">Perfect for solo travelers.</p>
+                <p class="fw-bold text-primary">$499</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 text-center border-primary">
+              <div class="card-body">
+                <h5 class="card-title">Couples Retreat</h5>
+                <p class="card-text">A romantic getaway.</p>
+                <p class="fw-bold text-primary">$999</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 text-center">
+              <div class="card-body">
+                <h5 class="card-title">Luxury Package</h5>
+                <p class="card-text">5-star stays and private guides.</p>
+                <p class="fw-bold text-primary">$1999</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">What Our Travelers Say</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card review-card p-3">
+              <blockquote class="blockquote mb-0">
+                <p>"Best travel experience ever!"</p>
+                <footer class="blockquote-footer">Ananya Gupta</footer>
+              </blockquote>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card review-card p-3">
+              <blockquote class="blockquote mb-0">
+                <p>"We loved every minute of our Bali trip."</p>
+                <footer class="blockquote-footer">Rohan Mehta</footer>
+              </blockquote>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card review-card p-3">
+              <blockquote class="blockquote mb-0">
+                <p>"Highly professional team and service."</p>
+                <footer class="blockquote-footer">Sarah Khan</footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-4">
+      <p class="mb-0">© 2025 Wanderlust Travels. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
