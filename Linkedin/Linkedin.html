@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinkedIn Login Clone</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        height: 100%;
+        margin: 0;
+      }
+
+      .bg-image {
+        background-image: url("/Linkedin/img/bg_img.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .login-card {
+        background: white;
+        border-radius: 8px;
+        width: 100%;
+        max-width: 400px;
+        padding: 40px;
+      }
+
+      .footer-nav {
+        background-color: #212529;
+        color: white;
+        font-size: 0.8rem;
+      }
+
+      .footer-nav a {
+        color: #ccc;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg-image">
+      <nav class="navbar navbar-dark bg-dark px-4">
+        <a class="navbar-brand fw-bold" href="#"
+          ><img
+            src="/Linkedin/img/logo.PNG"
+            alt="logo"
+            width="100"
+            class="me-2"
+        /></a>
+        <div>
+          <a href="#" class="btn btn-link text-white text-decoration-none me-2"
+            >sign in</a
+          >
+          <a href="#" class="btn btn-outline-primary btn-sm">Join now</a>
+        </div>
+      </nav>
+
+      <div
+        class="container d-flex flex-grow-1 justify-content-center align-items-center"
+      >
+        <div class="login-card text-center">
+          <img
+            src="/Linkedin/img/linkedin.png"
+            alt="linkedin logo"
+            class="mb-4"
+            width="150"
+          />
+
+          <form>
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Email address or Phone number"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="password"
+                class="form-control"
+                placeholder="Password"
+              />
+            </div>
+            <button
+              type="submit"
+              class="btn btn-primary w-100 fw-bold py-2 mb-3"
+            >
+              Sign in
+            </button>
+
+            <div class="mb-2">
+              <a href="#" class="text-decoration-none">Forgot password?</a>
+            </div>
+            <div class="small">
+              Not a member?
+              <a href="#" class="text-decoration-none">Join now</a>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <footer class="footer-nav py-3 text-center">
+        <div class="container">
+          <span class="me-3">LinkedIn © 2026</span>
+          <a href="#">user Agreement</a>
+          <a href="#">privacy policy</a>
+          <a href="#">community guidelines</a>
+          <a href="#">cookie policy</a>
+          <a href="#">copyright policy</a>
+          <a href="#">unsubscribe</a>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
