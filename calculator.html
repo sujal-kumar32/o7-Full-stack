@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator</title>
+
+    <style>
+      body {
+        height: 100vh;
+        background-color: antiquewhite;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .calc {
+        width: 400px;
+        height: 500px;
+        background-color: black;
+        border-radius: 15px;
+      }
+      #show {
+        width: 90%;
+        height: 50px;
+        margin: 20px auto;
+        display: block;
+        font-size: 1.5rem;
+        text-align: right;
+        padding-right: 10px;
+      }
+      .clear-btn {
+        width: 90%;
+      }
+      #button-box {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        padding: 20px;
+      }
+      button {
+        height: 60px;
+        font-size: 1.2rem;
+      }
+      .total-btn {
+        width: 90%;
+        height: 60px;
+        font-size: 1.2rem;
+        margin-left: 5%;
+        background-color: red;
+      }
+      .clear-btn {
+        background-color: red;
+        font-weight: 600;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="calc">
+      <input type="text" id="show" placeholder="Enter calculation" readonly />
+      <div id="button-box">
+        <button title="7" onclick="showNum('7')">7</button>
+        <button title="8" onclick="showNum('8')">8</button>
+        <button title="9" onclick="showNum('9')">9</button>
+        <button title="Divide" onclick="showNum('/')">/</button>
+        <button title="4" onclick="showNum('4')">4</button>
+        <button title="5" onclick="showNum('5')">5</button>
+        <button title="6" onclick="showNum('6')">6</button>
+        <button title="Multiply" onclick="showNum('*')">*</button>
+        <button title="1" onclick="showNum('1')">1</button>
+        <button title="2" onclick="showNum('2')">2</button>
+        <button title="3" onclick="showNum('3')">3</button>
+        <button title="Subtract" onclick="showNum('-')">-</button>
+        <button title="Decimal" onclick="showNum('.')">.</button>
+        <button title="0" onclick="showNum('0')">0</button>
+        <button title="Add" onclick="showNum('+')">+</button>
+        <button title="Clear" class="clear-btn">C</button>
+      </div>
+      <button title="total" class="total-btn">=</button>
+    </div>
+    <script>
+      let buttons = document.querySelectorAll("#button-box button");
+      let totalBtn = document.querySelector(".total-btn");
+      function showNum(value) {
+        let show = document.getElementById("show");
+
+        show.value += value;
+      }
+      totalBtn.addEventListener("click", function () {
+        let show = document.getElementById("show");
+        show.value = eval(show.value);
+      });
+      buttons[15].addEventListener("click", function () {
+        let show = document.getElementById("show");
+        show.value = "";
+      });
+    </script>
+  </body>
+</html>
