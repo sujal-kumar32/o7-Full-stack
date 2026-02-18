@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baikal Foundation Clone</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Source Sans Pro", sans-serif;
+      }
+      h1,
+      h2,
+      .navbar-brand {
+        font-family: "Playfair Display", serif;
+      }
+
+      .nav-link {
+        color: rgba(255, 255, 255, 0.8) !important;
+        font-size: 0.9rem;
+      }
+      .text-teal {
+        color: #64b2a4;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: bold;
+      }
+      .footer-social i {
+        font-size: 1.2rem;
+      }
+
+      /* Adjusting image aspect ratio to match the design */
+      .feature-img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+      <div class="container">
+        <a class="navbar-brand d-flex flex-column" href="#">
+          <span class="fs-3 lh-1">Baikal</span>
+          <span
+            class="fs-6 fw-light tracking-widest text-uppercase"
+            style="font-size: 0.6rem !important; letter-spacing: 2px"
+            >Foundation</span
+          >
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          title="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">Homes</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">News</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">Components</a>
+            </li>
+            <li class="nav-item dropdown me-3">
+              <a class="nav-link dropdown-toggle" href="#">Docs</a>
+            </li>
+            <li class="nav-item mt-2 mt-lg-0">
+              <a class="btn btn-outline-light rounded-pill px-4 btn-sm" href="#"
+                >Purchase</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="py-5">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-12 col-md-6 text-center">
+            <img
+              src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80"
+              alt="Bridge"
+              class="feature-img mb-4"
+            />
+            <h3 class="text-teal fs-5 mb-3">About</h3>
+            <p class="text-muted px-lg-5">
+              Find out about our organization, mission, our methods, and the
+              results of our decades of advocacy.
+            </p>
+            <a
+              href="#"
+              class="text-teal text-decoration-none border-bottom border-teal pb-1"
+              >Learn More &rarr;</a
+            >
+          </div>
+
+          <div class="col-12 col-md-6 text-center">
+            <img
+              src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80"
+              alt="Forest"
+              class="feature-img mb-4"
+            />
+            <h3 class="text-teal fs-5 mb-3">Portfolio</h3>
+            <p class="text-muted px-lg-5">
+              Discover our curated portfolio of successful projects, showcasing
+              years of expertise and collaboration.
+            </p>
+            <a
+              href="#"
+              class="text-teal text-decoration-none border-bottom border-teal pb-1"
+              >See Portfolio &rarr;</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark py-4 mt-5">
+      <div class="container text-center">
+        <div class="d-flex justify-content-center gap-3">
+          <div
+            class="bg-white rounded-circle d-flex align-items-center justify-content-center"
+            style="width: 40px; height: 40px"
+          >
+            <span class="text-dark small">🕊️</span>
+          </div>
+          <div
+            class="bg-white rounded-circle d-flex align-items-center justify-content-center"
+            style="width: 40px; height: 40px"
+          >
+            <span class="text-dark small">📸</span>
+          </div>
+          <div
+            class="bg-white rounded-circle d-flex align-items-center justify-content-center"
+            style="width: 40px; height: 40px"
+          >
+            <span class="text-dark small">📌</span>
+          </div>
+          <div
+            class="bg-white rounded-circle d-flex align-items-center justify-content-center"
+            style="width: 40px; height: 40px"
+          >
+            <span class="text-dark small">▶️</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
